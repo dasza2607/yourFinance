@@ -5,18 +5,28 @@
 }
 
 body {
-    height: 800px;
+    min-height: 1000px;
     font-family: 'Montserrat', sans-serif;
 }
 .heading{
     font-size: 38px;
 }
-.header {
+header {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 40px;
     height: 220px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.transactions{
+    width: 1000px;
 }
 .transactions .heading{
     display: flex;
@@ -25,27 +35,12 @@ body {
 
 .transaction-list{
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     width: 750px;
     margin-left: 10px;
     margin-top: 80px;
 }
 
-.selection{
-    display: flex;
-    justify-content: right;
-    
-}
-
-.transaction{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px 0;
-    border-bottom: 1px solid black;
-    margin-top:7px;
-}
-  
 .transaction-name {
     flex-grow: 1;
 }
@@ -104,27 +99,22 @@ h3{
 }
 
 .selection{
-    display:flex;
-    flex-direction: column;
     width: 450px;
-    height: 550px;
-    float: right;
+    padding: 20px;
+    margin-right: 30px;
     text-align: center;
-    margin-top: -270px;
-    margin-right: 70px;
-    padding: 30px;
     border: 1px solid;
 }
 
 .available{
-    font-size: 85px;
+    font-size: 75px;
     margin: 25px;
 }
 
 .functions button{
     margin: 25px;
     height: 40px;
-    width: 85px;
+    width: 75px;
     border-radius: 2px;
     cursor: pointer;
     transition: transform .3s;
@@ -144,6 +134,7 @@ h3{
 
 .style .heading{
     margin-top:50px;
+    
 }
 .color-buttons{
     margin-top: 30px;
